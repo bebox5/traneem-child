@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400");
+body{
+    background-color: black;
+    margin: 10px;
+    padding: auto;
+}
+.container{
+    border: 4px  hsl(9, 94%, 61%) solid;
+    
+}
+.company-title{
+    text-align:right;
+    color: hsl(9, 94%, 61%);;
+    font-size: xx-large;
+    font-style: initial;
+    position: relative;
+    top: 10px;
+    right: 10px;
+    
+}
+.company-slogan{
+    text-align: center;
+    color: hsl(9, 94%, 61%);;
+    font-size: xx-large;
+    font-style: initial;
+    background-color: rgb(255, 247, 247);
+    position: relative;
+    top: 15px;
+}
+.home-image{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    bottom: 120px;
+    left: 10px;
+
+}
+
+.one{
+    position: relative;
+    
+
+}
+p{
+    color: hsl(9, 94%, 61%);;
+    position: relative;
+    top: 10px;
+    text-align: center;
+    font-size: x-large;
+}
+.parent{
+    position: relative;
+    bottom: 100px;
+    border: 4px  hsl(9, 94%, 61%) solid;
+    /* border-bottom: none; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 200px;
+}
+.child{
+    display: grid;
+    place-items: center;
+    padding:100px;
+
+}
+@media (max-width:768px){
+    .parent{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width:480px){
+    .parent{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
